@@ -7,11 +7,11 @@ int main()
     scanf("%d",&r);
     arr[0]=0;
     arr[1]=1;
-    for(i=2;i<range;i++){
+    for(i=2;i<r;i++){
          arr[i] = arr[i-1] + arr[i-2];
     }
     printf("\nFibonacci series is: ");
-    for(i=0;i<range;i++)
+    for(i=0;i<r;i++)
          printf("%ld\n",arr[i]);  
     return 0;
 }
